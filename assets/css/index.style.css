@@ -1,0 +1,216 @@
+.strengthCalculatorContainer {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.strengthCalculatorWrapper {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  background-color: #FFF;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05)
+}
+.strengthCalculatorWrapper h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #232323;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.strengthCalculatorWrapper p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #232323;
+  padding: 0 20px;
+  margin: 10px 0 5px;
+}
+.strengthCalculatorWrapper form {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.inputForm {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.strengthCalculatorInput {
+  width: 80%;
+  max-width: 500px;
+  height: 35px;
+  background-color: #F8F8F8;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.inputFullWidth {
+  width: 100%;
+}
+.strengthCalculatorInput::placeholder {
+  color: #959595;
+}
+.liftUnitInputWrapper {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.strengthCalculatorSelect {
+  width: 20%;
+  height: 35px;
+  background-color: #EFEFEF;
+  border: none;
+  margin-top: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.strengthCalculatorSelect:focus {
+  outline: none;
+}
+@media only screen and (max-width: 380px) {
+.strengthCalculatorInput {width: 70%;}
+.strengthCalculatorSelect {width: 30%;}
+}
+
+.inputButtonStyle {
+  padding: 8px 40px;
+  margin: 0;
+  background-color: #07CFBC;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #FFF;
+  font-size: 16px;
+  margin: 10px 0px 20px;;
+}
+.inputButtonStyle:hover {
+  background-color: #08B6A6;
+}
+
+.compareStrengthStyle {
+  width: 49%;
+}
+.strenghtInputMargin {
+  margin-left: 2%;
+}
+.strenghtSelectMargin {
+  margin-left: 2%;
+}
+.compareStrengthSelect  {
+  width: 32%;
+  height: 35px;
+  background-color:  #F8F8F8;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.compareStrengthSelect {
+  outline: none;
+}
+
+.dropdownContainer {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.dropdownButtonWrapper {
+  width: 100%;
+  position: relative;
+}
+.dropdownButtonWrapper button {
+  position: absolute;
+  right: 0;
+  top: -57px;
+  background-color: #07CFBC;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdownButtonWrapper button:hover {
+  background-color: #05B0A0;
+}
+.dropdownButtonWrapper button .material-icons {
+  color: #FFF;
+}
+
+.dropdownContent {
+  background-color: #FFF;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.dropdownContent p {
+  margin: 0px;
+  padding: 0px 0px 20px;
+}
+.dropdownContent h4 {
+  margin: 0;
+  padding: 0 0 10px;
+}
+.dropdownContent table {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.tableHeader {
+  background-color: #05B0A0;
+  padding: 5px 10px;
+  color: #FFF;
+}
+
+.dropdownContent table tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+@media only screen and (max-width: 400px) {
+  .dropdownContent table {font-size: 14px;}
+}
+@media only screen and (max-width: 611px) {
+  .compareChartTable table {font-size: 14px;}
+}
+@media only screen and (max-width: 570px) {
+  .compareChartTable table {
+    margin: 0;
+    padding: 0;
+  }
+  .compareChartTable {
+    overflow-x: scroll;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .compareChartTableContainer {
+    height: 123px;
+    position: relative;
+    width: 100%;
+  }
+}
+.highlightRow {
+  font-weight: bold;
+}

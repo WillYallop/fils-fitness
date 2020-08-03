@@ -1,0 +1,319 @@
+.browseExerciseContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.browseExerciseWrapper {
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(/assets/images/index/pwaindexbg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+}
+.browseExerciseWrapperOverlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(7, 207, 188, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.browseExerciseWrapperOverlay h1 {
+  margin: 0;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.titleP {
+  margin: 0;
+  padding: 10px 10px 0;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+}
+.ajaxFormWrapper {
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+}
+.ajaxFormWrapper input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
+  height: 35px;
+  border: none;
+}
+.ajaxFormWrapper input:focus {
+  border: 1px solid transparent !important;
+}
+.ajaxFormWrapper input::placeholder {
+  color: #5C5C5C;
+}
+
+.exerciseContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.exerciseWrapper {
+  width: 100%;
+  max-width: 1010px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.exerciseLinkContainer {
+  padding: 5px 5px;
+  width: 33.3%;
+  box-sizing: border-box;
+}
+.exerciseLinkContainer a {
+  display: block;
+  text-decoration: none;
+}
+.exerciseLinkWrapper {
+  width: 100%;
+  background-color: #FFF;
+  height: 48px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+.exerciseLinkWrapper button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: #07CFBC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.exerciseLinkWrapper:hover .exerciseLinkButton {
+  background-color: #05B0A0;
+}
+.exerciseLinkWrapper button .material-icons {
+  color: #FFF;
+}
+.exerciseNameWrapper {
+  max-width: 200px;
+  max-height: 38px;
+  overflow: hidden;
+  margin: 5px 0px;
+}
+.exerciseNameWrapper p {
+  margin: 0;
+  padding: 0;
+  color: #1F1F1F;
+  padding: 0px 20px 0px 5px;
+}
+@media only screen and (max-width: 650px) {
+  .exerciseLinkContainer {width: 50%;}
+}
+@media only screen and (max-width: 390px) {
+  .exerciseLinkContainer {width: 100%;}
+}
+
+#resultsBox {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  right: 20px;
+  background-color: #F8F8F8;
+  height: auto;
+  z-index: 600;
+}
+.searchResultWrapper {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+}
+.exerciseResultRow {
+
+}
+.exerciseResultRow a {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #1F1F1F;
+  transition: 0.3s;
+}
+.exerciseResultRow a:hover {
+  background-color: #F2F2F2;
+  color: #07CFBC;
+}
+.exerciseResultRow p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Log in overlay*/
+.loginBackgroundOverlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginWrapper {
+  margin-bottom: 70px;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FFF;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.signupWrapperHeader {
+  width: 100%;
+  height: 40px;
+  background-color: #07CFBC;
+  display: flex;
+  align-items: center;
+}
+.signupWrapperHeader h1 {
+  color: #FFF;
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding: 0 20px;
+}
+.formSignup {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.passwordRequirements {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.formSignup input {
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  border: 1px solid #DDDDDD;
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #F8F8F8;
+}
+.formSignup button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.showPasswordCheckboxWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.showPasswordCheckbox {
+  width: 35px !important;
+}
+.showPasswordCheckboxWrapper p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.myCheckbox {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.myCheckbox input {
+  position: relative;
+  z-index: -9999;
+}
+
+.myCheckbox span {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 0;
+  display: block;
+  background-color: #FAFAFA;
+  border: 1px solid #C5C5C5;
+  border-radius: 10px;
+}
+
+.myCheckbox input:checked + span {
+  background-image: url(/assets/images/misc/materialIconTick2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.showPasswordText {
+  margin-left: 10px;
+}
+.showPasswordText p {
+  font-size: 14px;
+}
+
+.footerArea {
+  background-color: #05B0A0;
+  color: #FFF;
+}
+.footerArea a {
+  color: #FFF;
+}
+#errorPopup {
+  height: auto;
+  width: 100%;
+  background-color: #05B0A0;
+}
+#errorPopup p {
+  color: #FFF;
+  padding: 10px 20px;
+  margin: 0;
+}
+#errorPopup p a {
+  color: #fff;
+}
+#togglePageLogin {
+  left: 0;
+  transition: 0.2s;
+  transition-property: left, padding;
+}
+#togglePageLogin.hidePage {
+  left: -260px;
+}

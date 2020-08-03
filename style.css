@@ -1,0 +1,639 @@
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F2F2F2;
+}
+::selection {
+    background-color: #07CFBC;
+    color: #FFF;
+}
+button:focus {
+  outline: none;
+}
+input {
+  border: 1px solid transparent !important;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #07CFBC !important;
+}
+textarea {
+  border: 1px solid transparent !important;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid #07CFBC !important;
+}
+
+/*Desktop Header*/
+.headerAdjustHeight {
+  transition: 0.2s;
+  transition-property: height;
+}
+.headerContainer {
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  border-bottom: 10px solid #05B0A0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.headerWrapper {
+  width: 100%;
+  height: 80px;
+  max-width: 1600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.logoLink {
+  text-decoration: none;
+}
+.tempLogo {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #494949;
+}
+.desktopNav {
+}
+.desktopNav ul {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.desktopNav ul li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.desktopNav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 20px 10px;
+}
+
+.desktopHeaderButtonContainer {
+  position: absolute;
+  right: 14px;
+  top: 0;
+  height: 80px;
+  width: auto;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+}
+.desktopHeaderButtonContainer button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.desktopHeaderButtonContainer button .material-icons{
+  color: #FFF;
+  font-size: 27px;
+}
+#accountDropdownBtn {
+  position: relative;
+}
+#accountDropdownBtn button {
+  padding: 16px 6px;
+}
+#accountDropdownBtn button .material-icons {
+  font-size: 31px;
+  transition: 0.2s;
+}
+#accountDropdownBtn:hover button .material-icons {
+  color: #E4E4E4;
+}
+#accountDropdownBtn:hover .accountDropdownContainer {
+  opacity: 1;
+  pointer-events: all;
+}
+.accountDropdownContainer {
+  position: absolute;
+  top: 59px;
+  right: 6px;
+  background-color: #F5F5F5;
+  width: auto;
+  padding: 15px 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s;
+  z-index: 1100;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.accountDropdownContainer form {
+  margin: 0;
+}
+.footeButtonWrapper form {
+  margin: 0;
+}
+.accountDropdownContainer button {
+  background-color: #07CFBC;
+  color: #FFF;
+  border: none;
+  width: 250px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 8px 0 !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.accountDropdownContainer button:hover {
+  background-color: #08B6A6;
+}
+#shoppingCart2 .material-icons {
+  transition: 0.2s;
+}
+#shoppingCart .material-icons {
+  transition: 0.2s;
+}
+#shoppingCart2:hover .material-icons {
+  color: #E4E4E4;
+}
+#shoppingCart:hover .material-icons {
+  color: #E4E4E4;
+}
+
+.mobileHeaderButtonContainer {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  height: 80px;
+  width: auto;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+}
+.mobileHeaderButtonContainer button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.mobileHeaderButtonContainer button .material-icons{
+  color: #FFF;
+  font-size: 27px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #FFF;
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+  background-color: #FFF;
+}
+.hamburger {
+  padding: 0;
+  padding-top: 5px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 35px;
+  height: 3.5px;
+}
+.hamburger-box {
+  width: 40px;
+}
+.hamburger-inner::before {
+  top: -8px;
+}
+.hamburger-inner::after {
+  bottom: -8px;
+}
+.headerSlantContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 80px;
+  width: 30%;
+  background-color: #07CFBC;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 100;
+}
+/*Darkmode button*/
+.darkmodeBtnGlobal {
+  height: 40px;
+  width: 40px;
+  background-color: #FFF;
+  border-radius: 50%;
+  padding: 0;
+  z-index: 500;
+  position: absolute;
+  right: 70px;
+  top: 10px;
+  border: none;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.darkmode--activated .darkmodeBtnGlobal {
+  background-color: #1c1c1c;
+}
+.darkmode--activated .darkmodeBtnGlobal .material-icons {
+  color: #FFF;
+}
+.darkmodeBtnGlobal .material-icons {
+  color: #1c1c1c;
+  font-size: 16px;
+  transition: 0.2s;
+}
+.darkmodeBtnGlobal:hover .material-icons {
+  color: #ffa200;
+}
+
+/*Mobile Nav Slider*/
+.mobileNavSlider {
+  width: 260px;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: -300px;
+  z-index: 900;
+  background-color: #FFF;
+  box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.03);
+
+}
+.siteMobileNavWrapper {
+  height: 100%;
+  width: 100%;
+}
+.simplebar-content {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#toggleNavSlider {
+  right: -260px;
+  transition: right 0.2s;
+}
+#toggleNavSlider.hideNavbar {
+  right: 0;
+}
+.mobileNav {
+  transition: 0.2s;
+  transition-property: margin;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  align-self: flex-start;
+}
+.marginResize {
+  margin-top: 70px;
+}
+.mobileNav ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  list-style-type: none;
+}
+.topLi {
+  border-top: 1px solid #F4F4F4;
+}
+.mobileNav ul li {
+  border-bottom: 1px solid #F4F4F4;
+}
+.mobileNav ul li a {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 0px;
+  text-align: right;
+  color: #232323;
+  font-size: 18px;
+  position: relative;
+}
+.mobileNav ul li a .material-icons {
+  position: absolute;
+  left: 0;
+  line-height: 20.77px;
+  color: #BEBEBE;
+}
+.mobileNav ul li a:hover .material-icons{
+  color: #07CFBC;
+}
+.mobileNavSliderFooter {
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #08B6A6;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+.footeButtonWrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footeButtonWrapper .logInBtn {
+  background-color: transparent;
+  border: 2px solid #FFF;
+  width: 100%;
+  border-radius: 20px;
+  padding: 6px 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #FFF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footeButtonWrapper .logInBtn:hover {
+  background-color: #FFF;
+  color: #232323;
+}
+
+.mobileSearchForm {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.mobileSearchForm input {
+  height: 30px;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #FFF;
+  border-top: 1px solid #B4B4B4;
+  border-bottom: 1px solid #B4B4B4;
+  border-left: 1px solid #B4B4B4;
+  border-right: none;
+}
+.mobileSearchForm input::placeholder {
+  color: #B4B4B4;
+}
+.mobileSearchForm input:focus {
+  outline: none;
+}
+.mobileSearchForm button {
+  width: 20%;
+  background-color: #FFF;
+  border-top: 1px solid #B4B4B4;
+  border-bottom: 1px solid #B4B4B4;
+  border-right: 1px solid #B4B4B4;
+  border-left: none;
+}
+.mobileSearchForm button:focus {
+  outline: none;
+}
+.mobileSearchForm button .material-icons {
+  color: #B4B4B4;
+}
+/*Universal page container*/
+.universalPageContainer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 90px 0px 0px 0px;
+}
+.paddingResize {
+  padding: 70px 0px 0px 0px;
+}
+#togglePage {
+  left: 0;
+  transition: 0.2s;
+  transition-property: left, padding;
+}
+#togglePage.hidePage {
+  left: -260px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .desktopNav {display: none;}
+  .searchForm {margin-left: 40px; width: 30%;}
+  .headerSlantContainer {width: 45%;}
+  .desktopHeaderButtonContainer {display: none;}
+
+  .headerWrapper {height: 60px !important}
+  .headerSlantContainer {height: 60px !important}
+  .mobileHeaderButtonContainer {height: 60px !important}
+  .universalPageContainer {padding: 70px 0px 0px 0px !important}
+  .marginResize {margin-top: 70px !important}
+  .paddingResize {padding: 70px 0px 0px 0px !important}
+}
+@media only screen and (min-width: 1050.1px) {
+  .topResize {top: 10px !important;}
+  .darkmodeBtnGlobal {top: 20px;}
+  .mobileHeaderButtonContainer {display: none;}
+  .mobileNavSlider {display: none;}
+  #togglePage.hidePage {left: 0;}
+}
+@media only screen and (max-width: 390px) {
+  .searchForm {display: none;}
+  .tempLogo {font-size: 30px;}
+  .headerSlantContainer {width: 55%;}
+}
+
+.globalBtnStyle {
+  padding: 8px 40px;
+  background-color: #07CFBC;
+  border-radius: 20px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.globalBtnStyle:hover {
+  background-color: #08B6A6;
+}
+
+/*Loading overlay Styling*/
+.modal {
+  display: none;
+  position:   fixed;
+  z-index:    1000;
+  bottom:        0;
+  left:       0;
+  width: 100%;
+}
+.displayFlex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modal button {
+  background-color: #07CFBC;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.modalGif {
+  height: 50%;
+  background:
+              url('/assets/images/misc/loader.gif')
+              50% 50%
+              no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+}
+body.loading .modal {
+    overflow: hidden;
+}
+body.loading .modal {
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .displayFlex {display: none;}
+}
+
+
+/*Darkmode CSS*/
+#darkModeBTN {
+  cursor: pointer;
+}
+
+.darkmode-background {
+    background: #F3F3F3 !important;
+}
+.darkmode--activated .darkmode-background {
+    background: #F1F1F1 !important;
+}
+.darkmode-layer {
+  z-index: 0;
+}
+.darkmode--activated .darkmodeBackgroundColour {
+  background-color: #1C1C1C;
+  background: #1C1C1C;
+}
+.darkmode--activated .darkmodeBackgroundColour2 {
+  background-color: #161616;
+  background: #161616;
+}
+.darkmode--activated .exerciseLinkWrapper {
+  background-color: #1C1C1C;
+}
+.darkmode--activated .signupWrapper {
+  background-color: #1C1C1C;
+}
+.darkmode--activated .loginWrapper {
+  background-color: #1C1C1C;
+}
+.darkmode--activated .planDayWrapper {
+  background-color: #1C1C1C;
+}
+.darkmode--activated .exerciseInputWrapper .col {
+  background-color: #1C1C1C;
+}
+.darkmode--activated .exerciseWrapperHeader {
+  background-color: #161616;
+}
+.darkmode--activated .exerciseTrackerContentWrapper {
+  background-color: #1C1C1C;
+}
+.darkmode--activated .logResult {
+  background-color: #161616;
+}
+.darkmode--activated .noteRow {
+  background-color: #161616;
+}
+.darkmode--activated .mobileNav ul li {
+  border-bottom: 1px solid #161616;
+}
+.darkmode--activated .topLi {
+  border-top: 1px solid #161616;
+}
+.darkmode--activated #resultsBox {
+  background-color: #161616;
+}
+
+.darkmode--activated .myCheckbox span {
+  background-color: #161616;
+  border: 1px solid #454545;
+}
+.darkmode--activated input {
+  background: #161616;
+  color: #FFF;
+}
+.darkmode--activated input::placeholder {
+  color: #D2D2D2;
+}
+.darkmode--activated textarea {
+  background: #161616;
+  color: #FFF;
+}
+.darkmode--activated textarea::placeholder {
+  color: #D2D2D2;
+}
+.darkmode--activated select {
+  background: #161616;
+  color: #FFF;
+}
+.darkmode--activated .dropdownContent {
+  background-color: #1C1C1C;
+}
+.darkmode--activated .dropdownContent table tr {
+  color: #FFF;
+}
+.darkmode--activated .dropdownContent table tr:nth-child(even) {
+  background-color: #161616;
+}
+
+.darkmode--activated #SvgjsText1019 {fill: #FFF;}
+.darkmode--activated #SvgjsText1021 {fill: #FFF;}
+.darkmode--activated #SvgjsText1023 {fill: #FFF;}
+.darkmode--activated #SvgjsText1025 {fill: #FFF;}
+.darkmode--activated #SvgjsText1027 {fill: #FFF;}
+.darkmode--activated #SvgjsText1029 {fill: #FFF;}
+.darkmode--activated #SvgjsText1031 {fill: #FFF;}
+.darkmode--activated #SvgjsText1033 {fill: #FFF;}
+.darkmode--activated #SvgjsText1035 {fill: #FFF;}
+.darkmode--activated #SvgjsText1037 {fill: #FFF;}
+
+.darkmode--activated #SvgjsText1038 {fill: #FFF;}
+.darkmode--activated #SvgjsText1039 {fill: #FFF;}
+.darkmode--activated #SvgjsText1040 {fill: #FFF;}
+.darkmode--activated #SvgjsText1041 {fill: #FFF;}
+.darkmode--activated #SvgjsText1042 {fill: #FFF;}
+.darkmode--activated #SvgjsText1043 {fill: #FFF;}
+
+.darkmode--activated p, .darkmode--activated li, .darkmode--activated h4, .darkmode--activated h5, .darkmode--activated h2, .darkmode--activated h3, .darkmode--activated a {
+  color: #FFF !important;
+}
+.darkmode--activated  #text {
+  color: #FFF !important;
+}
+/*^^^^^ Darkmode CSS ^^^^^*/
+
+
+/* Auto Fill input styles */
+
+input:-internal-autofill-selected {
+  color: #222222 !important;
+  background: #f4f4f4 !important;
+}
+.darkmode--activated input:-internal-autofill-selected {
+  color: #FFF !important;
+  background: #161616 !important;
+}

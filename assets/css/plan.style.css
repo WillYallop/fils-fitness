@@ -1,0 +1,398 @@
+.planDayContainer {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.scrollToTopDiv {
+  height: 99px;
+  width: 100%;
+  position: absolute;
+  top: -99px;
+  pointer-events: none;
+}
+@media only screen and (max-width: 1050px) {
+.scrollToTopDiv {
+  height: 79px !important;
+  top: -79px !important;
+}
+}
+.planDayWrapper {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  background-color: #FFF;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+}
+.planDayWrapper h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #232323;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.planDayForm {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.planDayForm input {
+  height: 35px;
+  background-color: #F8F8F8;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.planDayForm input::placeholder {
+  color: #959595;
+}
+.largeInput {
+  width: 50%;
+}
+.smallInput {
+  width: 23%;
+  margin-left: 2%;
+}
+.planDayForm button {
+  padding: 8px 40px;
+  margin: 0;
+  background-color: #07CFBC;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #FFF;
+  font-size: 16px;
+  margin: 10px 0px 20px;;
+}
+.planDayForm button:hover {
+  background-color: #08B6A6;
+}
+.planDayDropdownContainer {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.planDayDropdownButtonWrapper {
+  width: 100%;
+  position: relative;
+}
+.planDayDropdownButtonWrapper button {
+  position: absolute;
+  right: 0;
+  top: -57px;
+  background-color: #07CFBC;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planDayDropdownButtonWrapper button:hover {
+  background-color: #05B0A0;
+}
+.planDayDropdownButtonWrapper button .material-icons {
+  color: #FFF;
+}
+.planDayDropdownContent {
+  height: auto;
+  width: 100%;
+  display: none;
+}
+.planDayDropdownContent p {
+  margin-top: 0;
+}
+.showDropdown {
+  display: block;
+}
+.planDayDropdownContent h3 {
+  margin: 0;
+  padding: 5px 0px;
+  font-weight: normal;
+  font-size: 18px;
+}
+/*Exercise Wrapper Area*/
+.exerciseWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #F8F8F8;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+.exerciseWrapperHeader {
+  width: 100%;
+  background-color: #05B0A0;
+  position: relative;
+}
+.exerciseWrapperHeader h4 {
+  color: #FFF;
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.exerciseWrapperHeader button {
+  height: 30.76px;
+  width: 30.76px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.trackExerciseBtn {
+  right: 40px !important;
+}
+
+.exerciseWrapperHeader button:hover .material-icons {
+  color: #1F1E1E;
+}
+.exerciseWrapperHeader button .material-icons {
+  color: #FFF;
+  transition: 0.3s;
+}
+.exerciseWrapperHeader form {
+  margin: 0;
+}
+.exerciseInputWrapper {
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.exerciseInputWrapper .col {
+  width: 49%;
+  background-color: #F4F4F4;
+}
+.exerciseInputWrapper .col p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  color: #101010;
+}
+
+
+/*Log in overlay*/
+.loginBackgroundOverlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginWrapper {
+  margin-bottom: 70px;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FFF;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.signupWrapperHeader {
+  width: 100%;
+  height: 40px;
+  background-color: #07CFBC;
+  display: flex;
+  align-items: center;
+}
+.signupWrapperHeader h1 {
+  color: #FFF;
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding: 0 20px;
+}
+.formSignup {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.passwordRequirements {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.formSignup input {
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  border: 1px solid #DDDDDD;
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+    background-color: #F8F8F8;
+}
+.formSignup button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.showPasswordCheckboxWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.showPasswordCheckbox {
+  width: 35px !important;
+}
+.showPasswordCheckboxWrapper p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.myCheckbox {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.myCheckbox input {
+  position: relative;
+  z-index: -9999;
+}
+
+.myCheckbox span {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 0;
+  display: block;
+  background-color: #FAFAFA;
+  border: 1px solid #C5C5C5;
+  border-radius: 10px;
+}
+
+.myCheckbox input:checked + span {
+  background-image: url(/assets/images/misc/materialIconTick2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.showPasswordText {
+  margin-left: 10px;
+}
+.showPasswordText p {
+  font-size: 14px;
+}
+
+.footerArea {
+  background-color: #05B0A0;
+  color: #FFF;
+}
+.footerArea a {
+  color: #FFF;
+}
+#errorPopup {
+  height: auto;
+  width: 100%;
+  background-color: #05B0A0;
+}
+#errorPopup p {
+  color: #FFF;
+  padding: 10px 20px;
+  margin: 0;
+}
+#errorPopup p a {
+  color: #fff;
+}
+#togglePageLogin {
+  left: 0;
+  transition: 0.2s;
+  transition-property: left, padding;
+}
+#togglePageLogin.hidePage {
+  left: -260px;
+}
+
+.hideWrapperClass {
+  display: none;
+}
+
+.workoutTimeContainer {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.workoutTimeContainer .col {
+  width: 49%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.workoutTimeContainer .col h4 {
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+.workoutTimeContainer .col p {
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.colImage1 {
+  background-image: url(/assets/images/index/hypertrophybg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.col-overlay1 {
+  background: rgba(5, 176, 160, 0.8);
+  padding: 10px 10px 5px;
+  text-align: center;
+}
+.colImage2 {
+  background-image: url(/assets/images/index/strengthbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.col-overlay2 {
+  background: rgba(5, 176, 160, 0.8);
+  padding: 10px 10px 5px;
+  text-align: center;
+}
+.darkmode--activated .exerciseWrapper {
+  background-color: #161616;
+}
